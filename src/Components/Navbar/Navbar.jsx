@@ -10,16 +10,19 @@ export const Navbar = () => {
             <p>QShop</p>
         </div>
         <ul className="nav-menu">
-            <li>All</li>
+            <li>All <hr /> </li>
             <li>Men</li>
             <li>Women</li>
             <li>Kids</li>
         </ul>
-        <div className="nav-login">
+        <div className="nav-login-cart">
             <button>
                 Login
             </button>
             <img src={cart_icon} alt="" />
+            <div className="nav-cart-count">
+                0
+            </div>
         </div>
     </div>
   )
