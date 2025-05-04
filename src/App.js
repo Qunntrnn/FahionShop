@@ -1,10 +1,33 @@
-import "./App.css";
-import { Navbar } from "./Components/Navbar/Navbar";
+import React, { Fragment } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import { routes } from './Routes';
+import DefaultComponent from './Components/DefaultComponent/DefaultComponent';
+
 
 function App() {
   return (
     <div>
-      <Navbar />
+      <Router>
+        <Routes>
+          {routes.map((route) => {
+            const Page = route.page;
+            const Layout = route.isShowHeader ? DefaultComponent : Fragment;
+
+            return (
+              <Route
+                key={route.path}
+                path={route.path}
+                element={
+                  <Layout>
+                    <Page />
+                  </Layout>
+                }
+              />
+            );
+          })}
+        </Routes>
+      </Router>
     </div>
   );
 }
