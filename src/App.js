@@ -1,9 +1,8 @@
-import React, { Fragment } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { Fragment } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { routes } from './Routes';
-import DefaultComponent from './Components/DefaultComponent/DefaultComponent';
-
+import { routes } from "./Routes";
+import DefaultComponent from "./Components/DefaultComponent/DefaultComponent";
 
 function App() {
   return (
