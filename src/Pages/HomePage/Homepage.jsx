@@ -21,7 +21,7 @@ const HomePage = () => {
           })}
         </WrapperTypeProduct>
         <div
-          id="container"
+
           style={{
             backgroundColor: "#efefef",
             padding: "0 120px",
@@ -37,7 +37,7 @@ const HomePage = () => {
             <CardProduct />
             <CardProduct />
             <CardProduct />
-            <CardProduct />
+
           </WrapperProduct>
           <div
             style={{
